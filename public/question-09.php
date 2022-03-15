@@ -17,9 +17,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<?php require "inc/head.inc.php" ?>
+    <?php require "inc/head.inc.php" ?>
 </head>
+
 <body>
     <header>
         <?php require "inc/header.inc.php" ?>
@@ -31,6 +33,9 @@
         </div>
 
         <form action="question-10.php" method="post">
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+
             <button type="submit" class="btn btn-primary">Next</button>
         </form>
     </main>
@@ -39,6 +44,5 @@
         <?php require "inc/footer.inc.php" ?>
     </footer>
 </body>
+
 </html>
-
-

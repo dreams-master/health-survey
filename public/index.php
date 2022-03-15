@@ -17,9 +17,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<?php require "inc/head.inc.php" ?>
+    <?php require "inc/head.inc.php" ?>
 </head>
+
 <body>
     <header>
         <?php require "inc/header.inc.php" ?>
@@ -37,6 +39,5 @@
     </footer>
 
 </body>
+
 </html>
-
-

@@ -17,9 +17,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<?php require "inc/head.inc.php" ?>
+    <?php require "inc/head.inc.php" ?>
 </head>
+
 <body>
     <header>
         <?php require "inc/header.inc.php" ?>
@@ -31,6 +33,18 @@
         </div>
 
         <form action="question-03.php" method="post">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Default radio
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Default checked radio
+                </label>
+            </div>
             <button type="submit" class="btn btn-primary">Next</button>
         </form>
     </main>
@@ -39,6 +53,5 @@
         <?php require "inc/footer.inc.php" ?>
     </footer>
 </body>
+
 </html>
-
-

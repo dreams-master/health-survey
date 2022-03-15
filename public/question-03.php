@@ -17,9 +17,11 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<?php require "inc/head.inc.php" ?>
+    <?php require "inc/head.inc.php" ?>
 </head>
+
 <body>
     <header>
         <?php require "inc/header.inc.php" ?>
@@ -31,6 +33,9 @@
         </div>
 
         <form action="question-04.php" method="post">
+            <label for="customRange3" class="form-label">Example range</label>
+            <input type="range" class="form-range" min="1" max="5" step="1" id="customRange3">
+
             <button type="submit" class="btn btn-primary">Next</button>
         </form>
     </main>
@@ -39,6 +44,5 @@
         <?php require "inc/footer.inc.php" ?>
     </footer>
 </body>
+
 </html>
-
-
