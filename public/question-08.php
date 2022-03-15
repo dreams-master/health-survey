@@ -15,6 +15,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ?>
 
+<?php
+    session_start();
+
+    $_SESSION["answer-07"] = $_POST["answer-07"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +40,7 @@
 
         <form action="question-09.php" method="post">
             <label for="quantity">Quantity (between 1 and 5):</label>
-            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <input type="number" id="quantity" name="answer-08" min="0">
 
             <button type="submit" class="btn btn-primary">Next</button>
         </form>

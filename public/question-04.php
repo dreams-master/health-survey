@@ -15,6 +15,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ?>
 
+<?php
+    session_start();
+
+    $_SESSION["answer-03"] = $_POST["answer-03"];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,16 +39,38 @@
         </div>
 
         <form action="question-05.php" method="post">
+            <?php
+                function printCheckbox($label) {
+                    echo '<div class="form-check">';
+                    echo '<input class="form-check-input" type="checkbox" value="" name="answer-04" id="flexCheckDefault">';
+                    echo '<label class="form-check-label" for="flexCheckDefault">';
+                    echo 'Default checkbox';
+                    echo '</label>';
+                    echo '</div>';
+                }
+            ?>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                <label class="form-check-label" for="flexCheckDefault">
-                    Default checkbox
+                <input class="form-check-input" type="checkbox" name="answer-04-01" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Lifting weights
                 </label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <input class="form-check-input" type="checkbox" name="answer-04-02" id="flexCheckChecked">
                 <label class="form-check-label" for="flexCheckChecked">
-                    Checked checkbox
+                    Walking
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="answer-04-03" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                   Jogging
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" name="answer-04-04" id="flexCheckChecked">
+                <label class="form-check-label" for="flexCheckChecked">
+                    Running
                 </label>
             </div>
             <button type="submit" class="btn btn-primary">Next</button>

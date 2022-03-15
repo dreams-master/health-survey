@@ -15,6 +15,29 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ?>
 
+<?php
+    session_start();
+
+    $_SESSION["answer-10"] = $_POST["answer-10"];
+
+    print_r($_SESSION);
+
+    function isHealty() {
+        $healthy = true;
+
+        if ($_SESSION["answer-03"] >= 3 &&
+            $_SESSION["answer-04"] >= 1 &&
+            $_SESSION["answer-06"] >= 2 &&
+            $_SESSION["answer-07"] >= 2 &&
+            $_SESSION["answer-08"] >= 1 &&
+            $_SESSION["answer-09"] >= 1
+        ) {
+            return true;
+        }
+        return false;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +51,13 @@
     </header>
 
     <main>
-        Health Score
+        <?php
+            if (isHealty()) {
+                echo '<div>Great! You live healthy.</div>';
+            } else {
+                echo '<div>Ouch! You could do more for your health.</div>';
+            }
+        ?>
     </main>
 
     <footer>

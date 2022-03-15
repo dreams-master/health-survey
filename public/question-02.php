@@ -15,6 +15,14 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ?>
 
+<?php
+    session_start();
+
+    $_SESSION["answer-01"] = $_POST["answer-01"];
+
+    print_r($_SERVER);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,16 +42,12 @@
 
         <form action="question-03.php" method="post">
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                    Default radio
-                </label>
+                <input class="form-check-input" type="radio" value="yes" name="answer-02" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">Yes</label>
             </div>
             <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                    Default checked radio
-                </label>
+                <input class="form-check-input" type="radio" value="no" name="answer-02" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">No</label>
             </div>
             <button type="submit" class="btn btn-primary">Next</button>
         </form>

@@ -15,6 +15,12 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 ?>
 
+<?php
+    session_start();
+
+    $_SESSION["answer-04"] = count($_POST);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,7 +40,7 @@
 
         <form action="question-06.php" method="post">
             <label for="customRange3" class="form-label">Example range</label>
-            <input type="range" class="form-range" min="1" max="5" step="1" id="customRange3">
+            <input type="range" class="form-range" min="1" max="5" step="1" name="answer-05" id="customRange3">
 
             <button type="submit" class="btn btn-primary">Next</button>
         </form>
