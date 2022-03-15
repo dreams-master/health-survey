@@ -33,7 +33,7 @@
         </div>
 
         <form action="question-02.php" method="post">
-            <label for="answer-01" class="form-label">Example range</label>
+            <!-- <label for="answer-01" class="form-label">Example range</label> -->
             <input type="range" class="form-range" min="1" max="5" step="1" name="answer-01" id="answer-01">
 
             <button type="submit" class="btn btn-primary">Next</button>
