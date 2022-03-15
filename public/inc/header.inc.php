@@ -56,7 +56,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarID">
-                <div class="navbar-nav">
+                <div class="navbar-nav ms-auto">
                     <a class="nav-link" aria-current="page" href="index.php">Home</a>
                     <a class="nav-link" aria-current="page" href="<?=previousPage();?>">Back</a>
                 </div>

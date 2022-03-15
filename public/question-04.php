@@ -40,39 +40,26 @@
 
         <form action="question-05.php" method="post">
             <?php
-                function printCheckbox($label) {
+                function printCheckbox($index, $label) {
                     echo '<div class="form-check">';
-                    echo '<input class="form-check-input" type="checkbox" value="" name="answer-04" id="flexCheckDefault">';
-                    echo '<label class="form-check-label" for="flexCheckDefault">';
-                    echo 'Default checkbox';
+                    echo '<input class="form-check-input" type="checkbox" value="" name="answer-04-' . $index . '" id="cb-' . $index . '">';
+                    echo '<label class="form-check-label" for="cb-' . $index . '">';
+                    echo "$label";
                     echo '</label>';
                     echo '</div>';
                 }
+
+                printCheckbox(1, "Lifting weights");
+                printCheckbox(2, "Walking");
+                printCheckbox(3, "Jogging");
+                printCheckbox(4, "Running");
+                printCheckbox(5, "Swimming");
+                printCheckbox(6, "Dancing");
+                printCheckbox(7, "Aerobics");
+                printCheckbox(8, "Pilates");
+                printCheckbox(9, "Team Sports");
+                printCheckbox(10, "Other");
             ?>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="answer-04-01" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Lifting weights
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="answer-04-02" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Walking
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="answer-04-03" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                   Jogging
-                </label>
-            </div>
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="answer-04-04" id="flexCheckChecked">
-                <label class="form-check-label" for="flexCheckChecked">
-                    Running
-                </label>
-            </div>
             <button type="submit" class="btn btn-primary">Next</button>
         </form>
     </main>
