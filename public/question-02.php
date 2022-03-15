@@ -19,8 +19,6 @@
     session_start();
 
     $_SESSION["answer-01"] = $_POST["answer-01"];
-
-    print_r($_SERVER);
 ?>
 
 <!DOCTYPE html>

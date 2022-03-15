@@ -39,8 +39,8 @@
         </div>
 
         <form action="evaluation.php" method="post">
-            <label for="quantity">Quantity (between 1 and 5):</label>
-            <input type="number" id="quantity" name="answer-10" min="0">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="answer-10" min="0" value="0">
 
             <button type="submit" class="btn btn-primary">Next</button>
         </form>

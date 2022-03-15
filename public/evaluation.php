@@ -20,8 +20,6 @@
 
     $_SESSION["answer-10"] = $_POST["answer-10"];
 
-    print_r($_SESSION);
-
     function isHealty() {
         $healthy = true;
 
